@@ -1,0 +1,15 @@
+insert into student values(10001,'Student 1', 'E00001');
+insert into student values(10002,'Student 2', 'E00002');
+insert into student values(10003,'Student 3', 'E00003');
+insert into student values(10004,'Student 4', 'E00004');
+insert into student values(10005,'Student 5', 'E00005');
+insert into student values(10006,'Student 6', 'E00006');
+insert into student values(10007,'Student 7', 'E00007');
+insert into student values(10008,'Student 8', 'E00008');
+insert into student values(10009,'Student 9', 'E00009');
+insert into student values(10010,'Student 10', 'E00010');
+insert into student values(10011,'Student 11', 'E00011');
+insert into student values(10012,'Student 12', 'E00012');
+insert into student values(10013,'Student 13', 'E00013');
+insert into student values(10014,'Student 14', 'E00014');
+insert into student values(10015,'Student 15', 'E00015');
