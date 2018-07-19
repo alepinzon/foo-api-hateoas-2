@@ -1,9 +1,5 @@
 package io.foo.hateoas.controller;
 
-//import org.springframework.data.domain.Page;
-//import org.springframework.data.domain.Pageable;
-//import org.springframework.data.web.PagedResourcesAssembler;
-
 import io.foo.hateoas.assembler.StudentResourceAssembler;
 import io.foo.hateoas.model.Student;
 import io.foo.hateoas.repository.StudentRepository;
