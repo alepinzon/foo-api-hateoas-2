@@ -38,9 +38,9 @@ public class StudentController {
     public PagedResources getAll(@RequestParam(value = "name", required = false) String name,
                                  @SortDefault(sort = "id", direction = DESC) Pageable pageable,
                                  PagedResourcesAssembler<Student> assembler) {
-        final Page<Student> page = studentRepository.findAll(new StudentSpecification(name), pageable);
-
         final Link link = new Link(fromCurrentRequest().build().toString());
+
+        final Page<Student> page = studentRepository.findAll(new StudentSpecification(name), pageable);
 
         return assembler.toResource(page, studentResourceAssembler, link);
     }
@@ -50,11 +50,11 @@ public class StudentController {
     public PagedResources getAllTemplated(@RequestParam(value = "name", required = false) String name,
                                           @SortDefault(sort = "id", direction = DESC) Pageable pageable,
                                           PagedResourcesAssembler<Student> assembler) {
-
         final Link link = linkTo(ControllerLinkBuilder.methodOn(StudentController.class)
                 .getAllTemplated(name, pageable, assembler)).withSelfRel();
 
         final Page<Student> page = studentRepository.findAll(new StudentSpecification(name), pageable);
+
         return assembler.toResource(page, studentResourceAssembler, link);
     }
 }
